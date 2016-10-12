@@ -17,22 +17,74 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <style>
-      #left-sidebar, #main-content {
-        height: 500px;
-        border: 1px solid red;
-        margin-bottom: 50px;
-      }
-
-      #footer {
-        border: 1px solid red;
-        text-align: center;
-      }
-    </style>
   </head>
+  
   <body>
+<!-- Top -->
 
-    <!-- Place your code at here! -->
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="#"> Takara Comic Store </a>
+		</div>
+		<ul class="nav navbar-nav">
+			<form>
+				<input type="text" name="search" placeholder=" Thiên Hạ Nghi Nhất Tự Lai Vấn" >				
+			</form>	
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+		  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng Kí </a></li>
+		  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập </a></li>
+		</ul>
+	  </div>
+	</nav>
+	
+<!-- Top -->
+
+<!-- Top Slider -->
+
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <img src="images/topslider1.jpeg" style="width:100%">
+	  <div class="text">Caption Text</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="images/topslider2.jpeg" style="width:100%">
+	  <div class="text">Caption Two</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="images/topslider3.jpeg" style="width:100%">
+	  <div class="text">Caption Three</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="images/topslider4.jpeg" style="width:100%">
+	  <div class="text">Caption Three</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="images/topslider5.jpeg" style="width:100%">
+	  <div class="text">Caption Three</div>
+	</div>
+	
+	<a class="prev" onclick="plusSlides(-1)">❮</a>
+	<a class="next" onclick="plusSlides(1)">❯</a>
+
+	</div>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span>
+	  <span class="dot" onclick="currentSlide(2)"></span>
+	  <span class="dot" onclick="currentSlide(3)"></span>
+	  <span class="dot" onclick="currentSlide(4)"></span>
+	  <span class="dot" onclick="currentSlide(5)"></span>	  
+	</div>
+
+<!-- Top Slider -->
+
     <div id="main">
       <div class="container">
         <!-- Grid system -->
