@@ -7,16 +7,15 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Takara Comic Store</title>
 	<link rel="shortcut icon" href="images/logo.png" />
-    <!-- Bootstrap -->
+<!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<!-- Bootstrap -->
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   
   <body>
@@ -25,17 +24,16 @@
 	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 		<div class="navbar-header">
-		  <a class="navbar-brand" href="#"> Takara Comic Store </a>
+		  <a class="navbar-brand" href="#">  Takara Comic Store  </a>
 		</div>
 		<ul class="nav navbar-nav">
 			<form>
-			<div class="container-fluid">
-				<input type="text" name="search" placeholder=" Thiên Hạ Nghi Nhất Tự Lai Vấn" >		</div>		
+				<input type="text" name="search" placeholder=" Thiên Hạ Nghi Nhất Tự Lai Vấn" >		
 			</form>	
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-		  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng Kí </a></li>
 		  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập </a></li>
+		  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng Kí </a></li>
 		</ul>
 	  </div>
 	</nav>
@@ -43,7 +41,7 @@
 <!-- Top -->
 
 <!-- Top Primary Menu -->
-	
+
 <!-- Top Primary Menu -->
 
 <!-- Top Slider -->
@@ -91,29 +89,118 @@
 <!-- Top Slider -->
 
     <div id="main">
-      <div class="container">
-        <!-- Grid system -->
+<!-- Grid system -->
         <div class="row">
-          <div id="left-sidebar" class="col-md-4">
-        
+          <div id="left-sidebar" class="col-md-3">
+
           </div>
+          <div id="main-content" class="col-md-9">
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#"> Trang Chủ </a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="w3-dropdown-hover w3-hover-orange">
+					  <a class="w3-hover-orange" href="#"> Sách <i class="fa fa-caret-down"></i></a>
+					  <div class="w3-dropdown-content w3-white w3-card-4">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					  </div>
+					</li>
+					<li class="w3-dropdown-hover w3-hover-orange">
+					  <a class="w3-hover-orange" href="#"> Phụ Kiện <i class="fa fa-caret-down"></i></a>
+					  <div class="w3-dropdown-content w3-white w3-card-4">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					  </div>
+					</li>
+					<li class="w3-dropdown-hover w3-hover-orange">
+					  <a class="w3-hover-orange" href="#"> Quà Tặng <i class="fa fa-caret-down"></i></a>
+					  <div class="w3-dropdown-content w3-white w3-card-4">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					  </div>
+					</li>
+					<li class="w3-dropdown-hover w3-hover-orange">
+					  <a class="w3-hover-orange" href="#"> Thời Trang <i class="fa fa-caret-down"></i></a>
+					  <div class="w3-dropdown-content w3-white w3-card-4">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					  </div>
+					</li>
+					<li class="w3-dropdown-hover w3-hover-orange">
+					  <a class="w3-hover-orange" href="#">Trợ Giúp <i class="fa fa-caret-down"></i></a>
+					  <div class="w3-dropdown-content w3-white w3-card-4">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					  </div>
+					</li>
+					<div class="btn-group" role="group" aria-label="...">
+					  <button type="button" class="btn btn-default"> <img src="images/cart.png" class="img-circle">
+					  Giỏ Hàng
+					  </button>
+					  <button type="button" class="btn btn-default" >Thanh Toán
+						<img src="images/checkout.png" class="img-circle">
+					  </button>
+					</div>
+					
+			  </div>
+			</nav>
+<div class="bs-example" data-example-id="thumbnails-with-custom-content"> 
+	<div class="row"> 
+		<div class="col-sm-4 col-md-3"> 
+			<div class="thumbnail"> 
+			<img alt="New Comic" src="" data-holder-rendered="true" style="height: 300px; width: 100%; display: block;"> 
+			<div class="caption"> <h3>Thumbnail label</h3> 
+			<p>Cras justo odio.</p> 
+			<p>
+				<a href="#" class="btn btn-primary" role="button">Thêm Giỏ</a> 
+				<a href="#" class="btn btn-default" role="button">Mua Ngay</a>
+			</p> 
+		</div> 
+	</div> 
+</div> 
 
-          <div id="main-content" class="col-md-8">
-
-
+</div>
           </div>
         </div>
-      </div>
     </div>
   
-    <!-- Footer -->
+<!-- Footer -->
     <div id="footer">
       <div class="container">
-          
+          <h3>About Us:</h3>
+        <div class="row">
+
+          <div class="col-md-4">
+            <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle">
+            <h4>Programmer</h4>
+            <p>You can thank all the crazy programming here to this guy.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" >
+            <h4>Artist</h4>
+            <p>All the images here are hand drawn by this man.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle">
+            <h4>Designer</h4>
+            <p>This pretty site and the copy it holds are all thanks to this guy.</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/npm.js"></script>
   </body>
 </html>
+

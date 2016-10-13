@@ -3655,6 +3655,7 @@ tbody.collapse.in {
 .btn-group-vertical > .btn {
   position: relative;
   float: left;
+  
 }
 .btn-group > .btn:hover,
 .btn-group-vertical > .btn:hover,
@@ -3683,25 +3684,29 @@ tbody.collapse.in {
 .btn-toolbar > .btn,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
-  margin-left: 5px;
+  margin-left: 0px;
 }
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 .btn-group > .btn:first-child {
-  margin-left: 0;
+  margin-left: 3px;
+  margin-top:0px;
+  height:60px;
 }
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  font-size:20px;
 }
-.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child){  margin-top:0px;   margin-left: 5px;   height:60px;   font-size:20px;},
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 .btn-group > .btn-group {
   float: left;
+
 }
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
@@ -3752,6 +3757,7 @@ tbody.collapse.in {
   float: none;
   width: 100%;
   max-width: 100%;
+
 }
 .btn-group-vertical > .btn-group > .btn {
   float: none;
@@ -4224,7 +4230,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
-    max-height: 200px;
+    max-height: 150px;
   }
 }
 .container > .navbar-header,
@@ -4278,6 +4284,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
   height: 50px;
   padding: 15px 15px;
+  padding-top:22px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -4357,7 +4364,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-nav {
     float: left;
-    margin: 0;
+    margin-top: 20;
   }
   .navbar-nav > li {
     float: left;
@@ -4515,7 +4522,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
+  color: #DDFFDD;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -5971,7 +5978,7 @@ button.close {
   height: 50px;
   overflow: scroll;
 }
-@media (min-width: 768px) {
+@media (min-width: 200px) {
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
