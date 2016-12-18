@@ -4282,9 +4282,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
+  height: auto;
   padding: 15px 15px;
-  padding-top:22px;
+  padding-top:25px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -4986,7 +4986,7 @@ a.badge:focus {
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
-  padding-right: 15px;
+  padding-right: 10px;
   padding-left: 15px;
   border-radius: 6px;
 }

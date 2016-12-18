@@ -31,126 +31,7 @@
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li>
-			<style>
-			/* Full-width input fields */
-			input[type=text], input[type=password] {
-				width: 55%;
-				padding: 12px 20px;
-				margin: 8px 0;
-				display: inline-block;
-				border: 1px solid #ccc;
-				box-sizing: border-box;
-			}
-
-			/* Set a style for all buttons */
-			button {
-				background-color: #4CAF50;
-				color: white;
-				padding: 14px 20px;
-				margin: 8px 0;
-				border: none;
-				cursor: pointer;
-				width: 10%;
-
-			}
-
-			/* Extra styles for the cancel button */
-			.cancelbtn {
-				width: auto;
-				padding: 10px 18px;
-				background-color: #f44336;
-			}
-
-			/* Center the image and position the close button */
-			.imgcontainer {
-				text-align: center;
-				margin: 24px 0 12px 0;
-				position: relative;
-			}
-
-			img.avatar {
-				width: 40%;
-				border-radius: 50%;
-			}
-
-			.container {
-				padding: 16px;
-			}
-
-			span.psw {
-				float: right;
-				padding-top: 16px;
-			}
-
-			/* The Modal (background) */
-			.modal {
-				display: none; /* Hidden by default */
-				position: fixed; /* Stay in place */
-				z-index: 1; /* Sit on top */
-				left: 0;
-				top: 0;
-				width: 100%; /* Full width */
-				height: 100%; /* Full height */
-				overflow: auto; /* Enable scroll if needed */
-				background-color: rgb(0,0,0); /* Fallback color */
-				background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-				padding-top: 60px;
-			}
-
-			/* Modal Content/Box */
-			.modal-content {
-				backgrwidthound-color: #fefefe;
-				margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-				border: 1px solid #888;
-				width: 50%; /* Could be more or less, depending on screen size */
-			}
-
-			/* The Close Button (x) */
-			.close {
-				position: absolute;
-				right: 25px;
-				top: 0;
-				color: #000;
-				font-size: 35px;
-				font-weight: bold;
-			}
-
-			.close:hover,
-			.close:focus {
-				color: red;
-				cursor: pointer;
-			}
-
-			/* Add Zoom Animation */
-			.animate {
-				-webkit-animation: animatezoom 0.6s;
-				animation: animatezoom 0.6s
-			}
-
-			@-webkit-keyframes animatezoom {
-				from {-webkit-transform: scale(0)}
-				to {-webkit-transform: scale(1)}
-			}
-				
-			@keyframes animatezoom {
-				from {transform: scale(0)}
-				to {transform: scale(1)}
-			}
-
-			/* Change styles for span and cancel button on extra small screens */
-			@media screen and (max-width: 300px) {
-				span.psw {
-				   display: block;
-				   float: none;
-				}
-				.cancelbtn {
-				   width: 100%;
-				}
-			}
-			/* -----------Login Form----------- */
-
-			</style>
-			<li><a href="#" onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập </a>
+				<a href="#" onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập </a>
 				<div id="id01" class="modal">				  
 				  <form class="modal-content animate" action="action_page.php">
 					<div class="imgcontainer">
@@ -319,8 +200,31 @@
 			<h2>Comic Store Address</h2>
 			<div id="map" style="width:315px; height:315px;background:yellow"></div>
 		<!-- Map -->
+		
+		
 		</div>
 		<div id="main-content" class="col-md-9">
+			<!-- Search Box -->
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				  <div class="col-lg-12">
+					<div class="input-group">
+					  <input type="text" class="form-control" placeholder="Search for...">
+						<button type="button" class="btn btn-success">Tìm Kiếm</button>
+
+						<span class="input-group-btn">
+							<button type="button" class="btn btn-default btn-lg"><img src="images/cart.png" style="margin-left: -15px;width:40px;height:40px;">Giỏ Hàng</button>
+							</span>
+							<span class="input-group-btn">
+							<button type="button" class="btn btn-default btn-lg"><img src="images/checkout.png" style="margin-left: -15px;width:40px;height:40px;">Thanh Toán</button>
+						</span>
+					</div><!-- /input-group -->
+				  </div><!-- /.col-lg-6 -->
+			  </div>	  
+			</nav>
+			<!-- Search Box -->
+			
+			<!-- Menu Website -->
 			<nav class="navbar navbar-default">
 			  <div class="container-fluid">
 				<div class="navbar-header">
@@ -330,15 +234,15 @@
 					<li class="w3-dropdown-hover w3-hover-orange">
 					  <a class="w3-hover-orange" href="#"> Sách <i class="fa fa-caret-down"></i></a>
 					  <div class="w3-dropdown-content w3-white w3-card-4">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
+						<a href="#">Truyện Tranh</a>
+						<a href="#">Tiểu Thuyết</a>
+						<a href="#">Tạp Chí</a>
 					  </div>
 					</li>
 					<li class="w3-dropdown-hover w3-hover-orange">
 					  <a class="w3-hover-orange" href="#"> Phụ Kiện <i class="fa fa-caret-down"></i></a>
 					  <div class="w3-dropdown-content w3-white w3-card-4">
-						<a href="#">Link 1</a>
+						<a href="#">Ốp Lưng Điện Thoại</a>
 						<a href="#">Link 2</a>
 						<a href="#">Link 3</a>
 					  </div>
@@ -346,39 +250,37 @@
 					<li class="w3-dropdown-hover w3-hover-orange">
 					  <a class="w3-hover-orange" href="#"> Quà Tặng <i class="fa fa-caret-down"></i></a>
 					  <div class="w3-dropdown-content w3-white w3-card-4">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
+						<a href="#">Móc Khóa</a>
+						<a href="#">Cốc-Bình Nước</a>
+						<a href="#">Nón-Gối</a>
 					  </div>
 					</li>
 					<li class="w3-dropdown-hover w3-hover-orange">
 					  <a class="w3-hover-orange" href="#"> Thời Trang <i class="fa fa-caret-down"></i></a>
 					  <div class="w3-dropdown-content w3-white w3-card-4">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
+						<a href="#">Balo</a>
+						<a href="#">Áo Thun</a>
+						<a href="#">Áo Khoác</a>
 					  </div>
 					</li>
 					<li class="w3-dropdown-hover w3-hover-orange">
 					  <a class="w3-hover-orange" href="#">Trợ Giúp <i class="fa fa-caret-down"></i></a>
 					  <div class="w3-dropdown-content w3-white w3-card-4">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
+						<a href="#">Mua Hàng</a>
+						<a href="#">Thanh Toán</a>
+						<a href="#">Giao Nhận</a>
 					  </div>
 					</li>
-					<div class="btn-group" role="group" aria-label="...">
-					  <button type="button" class="btn btn-default"> <img src="images/cart.png" class="img-circle">
-					  Giỏ Hàng
-					  </button>
-					  <button type="button" class="btn btn-default" >Thanh Toán
-						<img src="images/checkout.png" class="img-circle">
-					  </button>
-					</div>
+					<li>
+					<h3>&nbsp; &nbsp;<strong><i><u> HotLine:0963203816-01287857375 </strong></u></i></h3>
+					<li>
 				</ul>
 			  </div>
 			</nav>
-		<!-- Product List -->
+			<!-- Menu Website -->
+
+		
+			<!-- Product List -->
 			<div class="bs-example" data-example-id="thumbnails-with-custom-content"> 
 				<h3>Danh Mục 1</h3>
 				<div class="row"> 
