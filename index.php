@@ -32,10 +32,10 @@
 		</ul>
 			<li>
 				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-				<a href="#"><img src="images/facebook.png" style="width:50px;height:50px;"></a>&nbsp;
-				<a href="#"><img src="images/zalo.png" style="width:50px;height:50px;"></a>&nbsp;
-				<a href="#"><img src="images/instagram.png" style="width:50px;height:50px;"></a>&nbsp;
-				<a href="#"><img src="images/viber.png" style="width:50px;height:50px;"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				<a href=https://www.facebook.com/aquarius.love.allgirl" target="_blank"><img src="images/facebook.png" style="width:50px;height:50px;"></a>&nbsp;
+				<a href="https://zalo.me" target="_blank"><img src="images/zalo.png" style="width:50px;height:50px;"></a>&nbsp;
+				<a href="https://www.instagram.com/nhokthien_1412_95/" target="_blank"><img src="images/instagram.png" style="width:50px;height:50px;"></a>&nbsp;
+				<a href="https://www.viber.com"><img src="images/viber.png" style="width:50px;height:50px;"></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 				<style>
 				/* Full-width input fields */
 				input[type=text], input[type=password] {
