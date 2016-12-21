@@ -156,7 +156,7 @@
 				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="images/login.png" style="margin-left: -15px;width:40px;height:40px;"> Đăng Nhập</button>
 				<div id="id01" class="modal">
 				  
-				  <form class="modal-content animate" action="action_page.php">
+				  <form class="modal-content animate" action="models/login.php" method="POST">
 					<div class="imgcontainer">
 					  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 					  <img src="images/avatar.png" style="width:350px; height:250px;">
@@ -164,12 +164,12 @@
 
 					<div class="container">
 					  <label><b>Tài Khoản</b></label>
-					  <input type="text" placeholder="Nhập Tài Khoản" name="uname" required>
+					  <input type="text" placeholder="Nhập Tài Khoản" name="txtTaiKhoan" required>
 
 					  <label><b>Mật Khẩu</b></label>
-					  <input type="password" placeholder="Nhập Mật Khẩu" name="psw" required>
+					  <input type="password" placeholder="Nhập Mật Khẩu" name="txtPass" required>
 						
-					  <button type="submit">Đăng Nhập</button>
+					  <button type="submit" value="DangNhap" name="btnDangNhap">Đăng Nhập</button>
 					  <input type="checkbox" checked="checked"> Nhớ Mật Khẩu
 					</div>
 
@@ -183,26 +183,28 @@
 				<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><img src="images/register.png" style="margin-left: -15px;width:40px;height:40px;"> Đăng Kí</button>
 				<div id="id02" class="modal">
 				  
-				  <form class="modal-content animate" action="action_page.php">
+				  <form class="modal-content animate" action="models/register.php" method="POST">
 					<div class="imgcontainer">
 					  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
 					  <img src="images/avatar.png" style="width:350px; height:250px;">
 					</div>
 
 					<div class="container">
+					<form action="models/register.php" method="post">
 					  <label><b>Nhập Email(Tài Khoản)</b></label>
-					  <input type="text" placeholder="Nhập Tài Khoản Mới" name="uname" required>
+					  <input type="text" placeholder="Nhập Tài Khoản Mới" name="txtTaiKhoan" required>
 					  <label><b>Nhập Mật Khẩu</b></label>
-					  <input type="text" placeholder="Nhập Mật Khẩu Mới" name="uname" required>
+					  <input type="text" placeholder="Nhập Mật Khẩu Mới" name="txtMatKhau" required>
 					  <label><b>Nhập Lại Mật Khẩu</b></label>
-					  <input type="text" placeholder="Nhập Lại Mật Khẩu" name="uname" required>
-					  Giới Tính: &nbsp; &nbsp; Nam &nbsp;<input type="checkbox" checked="checked"> &nbsp; &nbsp;   Nữ &nbsp; <input type="checkbox"><br>
+					  <input type="text" placeholder="Nhập Lại Mật Khẩu" name="txtNhapLaiMK" required>
+					  Giới Tính: &nbsp; &nbsp; Nam &nbsp;<input type="checkbox" checked="checked" value="Nam"> &nbsp; &nbsp;   Nữ &nbsp; <input type="checkbox" value="Nu"><br>
 
 					  <label><b>Nhập Số Điện Thoại</b></label>
-					  <input type="text" placeholder="Có Thể Bỏ Trống" name="uname" required>
+					  <input type="text" placeholder="Có Thể Bỏ Trống" name="txtSoDT" required>
 					  <label><b>Nhập Địa Chỉ Giao Nhận</b></label>
-					  <input type="text" placeholder="Có Thể Bỏ Trống" name="uname" required>
+					  <input type="text" placeholder="Có Thể Bỏ Trống" name="txtDiaChi" required>
 					  <button type="submit">Đăng Kí</button>
+					</form>
 					</div>
 
 					<div class="container" style="background-color:#f1f1f1">
